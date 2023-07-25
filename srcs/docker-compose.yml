@@ -60,7 +60,7 @@ volumes:
   wordpress_volume:
     driver: local
     driver_opts:
-      device: /Users/jiyun/volumes/wordpress
+      device: ${HOME}/volumes/wordpress
       type: none
       o: bind
 
