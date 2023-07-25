@@ -20,7 +20,7 @@ $(DOCKER_DATA_DIR) :
 clean :
 	docker-compose -f $(DOCKER_COMPOSE_YML) down --rmi all --volumes
 	docker system prune -a
-	rm -rf $(DOCKER_DATA_DIR)
+	sudo rm -rf $(DOCKER_DATA_DIR)
 
 fclean : clean
 	sudo sed -i s/$(DOMAIN)//g /etc/hosts
