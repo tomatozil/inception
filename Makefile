@@ -23,6 +23,6 @@ clean :
 	sudo rm -rf $(DOCKER_DATA_DIR)
 
 fclean : clean
-	sudo sed -i '' s/$(DOMAIN)//g /etc/hosts # os마다 ''이 필요할 수도 있고 필요 없을 수도 있음
+	sudo sed -i s/$(DOMAIN)//g /etc/hosts # os마다 ''이 필요할 수도 있고 필요 없을 수도 있음
 
 .PHONY: all run clean fclean
