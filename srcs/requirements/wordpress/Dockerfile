@@ -30,7 +30,3 @@ ADD ./entrypoin.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
 
 ENTRYPOINT ["/sbin/tini", "--", "/entrypoint.sh"]
-
-#CMD sleep infinity
-
-#tini -> shell script를 쓰면은 pid 1이 돼 

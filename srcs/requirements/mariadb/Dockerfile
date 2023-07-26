@@ -16,7 +16,4 @@ EXPOSE 3306
 
 ENTRYPOINT ["/sbin/tini", "--", "/start_mariadb.sh"]
 
-#ENTRYPOINT & #CMD 차이
-
-
 #CMD sleep infinity
