@@ -1,5 +1,5 @@
 DOCKER_COMPOSE_YML		= srcs/docker-compose.yml
-DOCKER_DATA_DIR			= $(HOME)/data
+DOCKER_DATA_DIR			= /home/jiyun/data
 DOMAIN					= "127.0.0.1	jiyun.42.fr"
 
 all : run
@@ -23,6 +23,6 @@ clean :
 	sudo rm -rf $(DOCKER_DATA_DIR)
 
 fclean : clean
-	sudo sed -i s/$(DOMAIN)//g /etc/hosts
+	sudo sed -i '' s/$(DOMAIN)//g /etc/hosts # os마다 ''이 필요할 수도 있고 필요 없을 수도 있음
 
 .PHONY: all run clean fclean

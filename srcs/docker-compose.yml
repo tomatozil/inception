@@ -54,13 +54,13 @@ volumes:
   db_volume:
     driver: local
     driver_opts:
-      device: ${HOME}/data/mariadb #makefile에서 만들어주고 지워주기
+      device: /home/jiyun/data/mariadb #makefile에서 만들어주고 지워주기
       type: none
       o: bind
   wordpress_volume:
     driver: local
     driver_opts:
-      device: ${HOME}/data/wordpress
+      device: /home/jiyun/data/wordpress
       type: none
       o: bind
 
