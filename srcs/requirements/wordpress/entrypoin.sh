@@ -6,7 +6,7 @@ wp_user=`wp user get ${WP_USER} --field=user_login 2> /dev/null`
 
 
 if [ ! -f "/var/www/html/index.php" ]; then
-	wp core download --locale=ko_KR --path=/var/www/html --force
+	wp core download --path=/var/www/html --force
 fi
 
 if [ "$db_name" = "" ]; then
