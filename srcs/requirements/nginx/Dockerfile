@@ -3,8 +3,7 @@ RUN apk update && \
     apk upgrade && \
     apk add --no-cache \
     nginx \
-    openssl \
-    && rm -rf /var/cache/apk/*
+    openssl
 
 RUN mkdir /etc/nginx/ssl
 
